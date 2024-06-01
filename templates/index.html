@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .scoreboard {
+            background-color: #ffffff;
+            border-radius: 0;
+            box-shadow: none;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            border: none;
+        }
+        .header {
+            background-color: #1e90ff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .score-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .score-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 1.2em;
+        }
+        .score-list li:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        .score-list li:nth-child(even) {
+            background-color: #e9f1f7;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .points {
+            background-color: #1e90ff;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 12px;
+            min-width: 40px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f0f4f7;
+            text-align: center;
+            padding: 15px;
+            font-size: 1em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="scoreboard">
+    <div class="header">Scoreboard</div>
+    <ul class="score-list">
+        <li><span class="username">Bob</span><span class="points">10</span></li>
+        <li><span class="username">Eve</span><span class="points">15</span></li>
+        <li><span class="username">Charlie</span><span class="points">20</span></li>
+        <li><span class="username">Alice</span><span class="points">30</span></li>
+        <li><span class="username">David</span><span class="points">40</span></li>
+        <li><span class="username">Frank</span><span class="points">5</span></li>
+        <li><span class="username">Grace</span><span class="points">25</span></li>
+        <li><span class="username">Hank</span><span class="points">35</span></li>
+        <li><span class="username">Ivy</span><span class="points">50</span></li>
+        <li><span class="username">Jack</span><span class="points">45</span></li>
+    </ul>
+    <div class="footer">Last updated: May 31, 2024 at 10:00 AM</div>
+</div>
+
+</body>
+</html>
