@@ -77,16 +77,10 @@
 <div class="scoreboard">
     <div class="header">Scoreboard</div>
     <ul class="score-list">
-        <li><span class="username">Bob</span><span class="points">10</span></li>
-        <li><span class="username">Eve</span><span class="points">15</span></li>
-        <li><span class="username">Charlie</span><span class="points">20</span></li>
-        <li><span class="username">Alice</span><span class="points">30</span></li>
-        <li><span class="username">David</span><span class="points">40</span></li>
-        <li><span class="username">Frank</span><span class="points">5</span></li>
-        <li><span class="username">Grace</span><span class="points">25</span></li>
-        <li><span class="username">Hank</span><span class="points">35</span></li>
-        <li><span class="username">Ivy</span><span class="points">50</span></li>
-        <li><span class="username">Jack</span><span class="points">45</span></li>
+        {% for x in results %}
+            <li><span class="username">{{ x.0 }}</span><span class="points">{{ x.1 }}</span></li>
+        {%  endfor  %}
+
     </ul>
     <div class="footer">Last updated: May 31, 2024 at 10:00 AM</div>
 </div>
